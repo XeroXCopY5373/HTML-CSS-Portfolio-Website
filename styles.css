@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222831;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #3f3f3f;
+}
+
+#navbar ul li {
+    float: left;
+    margin: 20px;
+    
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#navbar a:hover {
+    color: wheat;
+}
+
+#navbar .logo img{
+    width: 150px;
+    height: 90px;
+}
+
+ul{
+    list-style: none;
+}
+
+#welcome-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section .introduction {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    border: none;
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.3);
+    
+}
+
+#welcome-section .introduction .img-info {
+    border: 1px solid wheat;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 69px;
+    width: 300px;
+    height: 300px;
+}
+
+#welcome-section p {
+    color: wheat;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#about-me {
+    color: black;
+}
+
+#about-me .information {
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#about-me .information ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+#about-me h2 {
+    color: skyblue
+}
+
+#projects {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects h2 {
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid white;
+    margin: 20px auto;
+    width: 50%;
+    height: 35px;
+}
+
+#projects .proj {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+
+#projects .proj h2 {
+    border: none;
+
+}
+
+#projects .proj img {
+    width: 350px;
+    height: 350px;
+    box-shadow: 1px 2px 1px 2px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+}
+
+.more-project a {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.more-project span {
+    color: white;
+}
+
+#contact {
+    color: white;
+    width: 500px;
+    margin: 20px auto;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+#contact form input[type="text"], textarea, input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    align-items: flex-start;
+}
+
+#contact form input[type="submit"] {
+    background-color: wheat;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 5px;
+    margin: auto;
+}
+
+#contact form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #FFEECA;
+}
+
+footer {
+    background-color: #3f3f3f;
+    color: white;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+}
+ 
+.footer-icons a{
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    color: #3f3f3f;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.footer-icons a:hover {
+    background-color: wheat;
+    cursor: pointer;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li {
+    float: left;
+    padding: 10px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+    color: wheat;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 780px) {
+    #navbar, #welcome-section .introduction{
+        flex-direction: column;
+    }
+
+    #navbar ul li {
+        font-size: 12px;
+    }
+
+    #welcome-section .introduction {
+        margin-top: 300px;
+        width: 100%;
+    }
+
+    #about-me .information {
+        width: 100%;
+    }
+
+    #projects h2 {
+        width: 100%;
+    }
+
+    .more-project {
+        padding: 20px 0;
+    }
+}
